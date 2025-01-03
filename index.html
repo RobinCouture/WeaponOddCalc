@@ -1,1 +1,58 @@
-<h1>Hello World heya</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapon Odd Calculator</title>
+
+    <script src="script/setupWeaponOdds.js"></script>
+</head>
+
+<body onload="drawWeaponOdds()">
+    <p>Cross' weapon : </p>
+    <select name="Range weapon">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <select name="Melee weapon">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <p>Team member 2 : </p>
+    <select name="Team member 2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <p>Team member 3 : </p>
+    <select name="Team member 3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <p>Team member 4 : </p>
+    <select name="Team member 4">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <div id="weapon_section"></div>
+
+    <button onclick="increaseOdds()">increase sword odd</button>
+    <button onclick="decreaseOdds()">decrease sword odd</button>
+</body>
+
+</html>
